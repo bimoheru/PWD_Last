@@ -1,8 +1,18 @@
 <?php
+include '../config/database.php';
+include '../template/header.php';
+include '../template/sidebar.php';
 
+// Hitung jumlah produk
+$qProduk = $conn->query("SELECT COUNT(*) AS total FROM produk");
+$produk = $qProduk->fetch_assoc();
+
+// Hitung jumlah kategori
+$qKategori = $conn->query("SELECT COUNT(*) AS total FROM kategori");
+$kategori = $qKategori->fetch_assoc();
 ?>
 
-<link rel="stylesheet" href="../assets/css/dashboard.css">
+<link rel="stylesheet" href="dashboard.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <div class="container-fluid">
@@ -34,6 +44,7 @@
                 </div>
             </div>
         </div>
+
 
     </div>
 

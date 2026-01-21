@@ -1,0 +1,33 @@
+/* DASHBOARD STAT BOX*/
+.stat-box {
+    position: relative;
+    padding: 20px;
+    border-radius: 6px;
+    color: #fff;
+    height: 120px;
+    overflow: hidden;
+}
+
+.stat-box h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-box p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* ICON */
+.stat-box .icon {
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    font-size: 60px;
+    opacity: 0.25;
+}
+
+/* COLOR */
+.bg-blue { background-color: #17a2b8; }   /* info */
+.bg-green { background-color: #28a745; }  /* success */

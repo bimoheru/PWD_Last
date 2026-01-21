@@ -11,15 +11,15 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/headfooter.css">
-    <script src="/U Komputer/script/script.js"></script>
+    <script src="script/script.js"></script>
 
 </head>
-<body>
+<body>  
 
 <header class="p-3 text-bg-dark">
   <div class="container-fluid">
     <div class="d-flex flex-wrap align-items-center justify-content-between">
-      <a href="home.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+      <a href="home.php" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
         <img src="img/logo.png" alt="Kembali ke Menu Utama" style="height:50px; width:auto;">
       </a>
       <ul class="nav col-lg-auto mb-2 justify-content-center mb-md-0">

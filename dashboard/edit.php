@@ -1,5 +1,19 @@
 <?php
+include '../config/database.php';
+include '../template/header.php';
+include '../template/sidebar.php';
 
+$id = $_GET['id'];
+$data = $conn->query("SELECT * FROM produk WHERE id_produk=$id")->fetch_assoc();
+
+if (isset($_POST['update'])) {
+    $stmt = $conn->prepare(
+        "UPDATE produk SET nama_produk=?, harga=?, stok=? WHERE id_produk=?"
+    );
+    $stmt->bind_param("siii", $_POST['nama'], $_POST['harga'], $_POST['stok'], $id);
+    $stmt->execute();
+    header("Location: produk.php");
+}
 ?>
 
 <link rel="stylesheet" href="../assets/css/dashboard.css">
@@ -8,7 +22,7 @@
 
     <div class="page-header">
         <h2>Edit Produk</h2>
-    </div>
+    </div>  
 
     <div class="card-custom">
         <form method="POST" class="form-custom">

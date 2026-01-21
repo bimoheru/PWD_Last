@@ -14,7 +14,7 @@ $data = $conn->query("SELECT p.*, k.nama_kategori AS kategori FROM produk p LEFT
       <div class="card-header">
         <h3 class="card-title">Data Produk</h3>
         <a href="tambah.php" class="btn btn-primary float-right">
-          <i class="fas fa-plus"></i> Tambah
+          <i class="fas fa-plus"></i> Tambah 
         </a>
       </div>
 
