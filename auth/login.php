@@ -1,6 +1,29 @@
 <?php
+session_start();
+include '../config/database.php';
 
+$error = "";
 
+if (isset($_POST['login'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $stmt = $conn->prepare("SELECT * FROM users WHERE email=?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $user = $stmt->get_result()->fetch_assoc();
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['login'] = true;
+        $_SESSION['id_user'] = $user['id_user'];
+        $_SESSION['nama'] = $user['nama'];
+        $_SESSION['role'] = $user['id_role'];
+
+        header("Location: ../dashboard/index.php");
+    } else {
+        $error = "Email atau password salah";
+    }
+}
 ?>
 
 <!DOCTYPE html>

@@ -1,5 +1,22 @@
 <?php
+include '../config/database.php';
+$error = "";
 
+if (isset($_POST['register'])) {
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $role = 2; // customer
+
+    $stmt = $conn->prepare(
+        "INSERT INTO users (nama,email,password,id_role) VALUES (?,?,?,?)"
+    );
+    if ($stmt->bind_param("sssi", $nama, $email, $password, $role) && $stmt->execute()) {
+        header("Location: login.php");
+    } else {
+        $error = "Registrasi gagal";
+    }
+}
 ?>
 
 <!DOCTYPE html>
