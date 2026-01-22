@@ -14,7 +14,7 @@
     <script src="script/script.js"></script>
 
 </head>
-<body>  
+<body>
 
 <header class="p-3 text-bg-dark">
   <div class="container-fluid">
@@ -24,12 +24,12 @@
       </a>
       <ul class="nav col-lg-auto mb-2 justify-content-center mb-md-0">
 
-        <li><a href="katalog/cpu.html" class="nav-link px-2 text-white">CPU</a></li>
-        <li><a href="katalog/mobo.html" class="nav-link px-2 text-white">MOTHERBOARD</a></li>
-        <li><a href="katalog/ram.html" class="nav-link px-2 text-white">RAM</a></li>
-        <li><a href="katalog/gpu.html" class="nav-link px-2 text-white">GRAPHIC CARD</a></li>
-        <li><a href="katalog/storage.html" class="nav-link px-2 text-white">STORAGE</a></li>
-        <li><a href="katalog/Psu.html" class="nav-link px-2 text-white">PSU</a></li>
+        <li><a href="katalog/cpu.php" class="nav-link px-2 text-white">CPU</a></li>
+        <li><a href="katalog/mobo.php" class="nav-link px-2 text-white">MOTHERBOARD</a></li>
+        <li><a href="katalog/ram.php" class="nav-link px-2 text-white">RAM</a></li>
+        <li><a href="katalog/gpu.php" class="nav-link px-2 text-white">GRAPHIC CARD</a></li>
+        <li><a href="katalog/storage.php" class="nav-link px-2 text-white">STORAGE</a></li>
+        <li><a href="katalog/Psu.php" class="nav-link px-2 text-white">PSU</a></li>
       </ul>
       <form class="d-flex align-items-center mb-3 mb-lg-0 me-lg-3" role="search" style="min-width:250px;">
         <input type="search" class="form-control form-control-dark me-2" placeholder="Search..." aria-label="Search">
@@ -73,7 +73,7 @@
 
     <!-- cpu -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/cpu.html" class="text-decoration-none text-dark">
+      <a href="katalog/cpu.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/intelamd.png" alt="cpu" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -83,7 +83,7 @@
 
     <!-- mobo -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/mobo.html" class="text-decoration-none text-dark">
+      <a href="katalog/mobo.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/rogx870.png" alt="mobo" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -93,7 +93,7 @@
 
     <!-- ram -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/ram.html" class="text-decoration-none text-dark">
+      <a href="katalog/ram.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/tridenddr5.png" alt="ram" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -103,7 +103,7 @@
 
     <!-- gpu -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/gpu.html" class="text-decoration-none text-dark">
+      <a href="katalog/gpu.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/gpu.png" alt="gpu" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -113,7 +113,7 @@
 
     <!-- storage -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/storage.html" class="text-decoration-none text-dark">
+      <a href="katalog/storage.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/ssdsamsung.png" alt="store" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -123,7 +123,7 @@
 
     <!-- psu -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/psu.html" class="text-decoration-none text-dark">
+      <a href="katalog/psu.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/seasonic750w.png" alt="psu" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -133,7 +133,7 @@
 
     <!-- Cooler -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/cooler.html" class="text-decoration-none text-dark">
+      <a href="katalog/cooler.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/RK120.png" alt="cooler" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -143,7 +143,7 @@
 
     <!-- Case -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/case.html" class="text-decoration-none text-dark">
+      <a href="katalog/case.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/nzxth6.png" alt="Case" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -153,7 +153,7 @@
 
     <!-- monitor -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/monitor.html" class="text-decoration-none text-dark">
+      <a href="katalog/monitor.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/monitor.png" alt="monitor" style="height:64px; width:64px; object-fit:contain;">
         </div>
@@ -163,7 +163,7 @@
 
     <!-- perip -->
     <div class="col-auto text-center mb-4">
-      <a href="katalog/perip.html" class="text-decoration-none text-dark">
+      <a href="katalog/perip.php" class="text-decoration-none text-dark">
         <div class="border rounded p-2 mb-2 d-flex align-items-center justify-content-center" style="height:100px; width:100px; margin:auto;">
           <img src="img/keebmouse.png" alt="perip" style="height:64px; width:64px; object-fit:contain;">
         </div>
