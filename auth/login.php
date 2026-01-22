@@ -19,7 +19,14 @@ if (isset($_POST['login'])) {
         $_SESSION['nama'] = $user['nama'];
         $_SESSION['role'] = $user['id_role'];
 
-        header("Location: ../dashboard/index.php");
+        // id_role == 1 itu admin
+        if (isset($user['id_role']) && intval($user['id_role']) === 1) {
+            header("Location: ../dashboard/index.php");
+            exit;
+        } else {
+            header("Location: ../web/home.php");
+            exit;
+        }
     } else {
         $error = "Email atau password salah";
     }
@@ -38,7 +45,9 @@ if (isset($_POST['login'])) {
 <div class="auth-card">
     <h2>Login</h2>
 
-
+    <?php if ($error): ?>
+        <div class="alert"><?= $error; ?></div>
+    <?php endif; ?>
 
     <form method="POST">
         <input type="email" name="email" placeholder="Email" required>
