@@ -30,8 +30,10 @@ if (isset($_POST['register'])) {
 
 <div class="auth-card">
     <h2>Register</h2>
-
-
+    
+    <?php if ($error): ?>
+        <div class="alert"><?= $error; ?></div>
+    <?php endif; ?>
 
     <form method="POST">
         <input type="text" name="nama" placeholder="Nama    " required>
